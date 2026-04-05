@@ -6,7 +6,8 @@
 
   --neutral: #000000;
   --primary: #ffffff;
-  --secondary: #2c2c2e;
+  --secondary: #737373;
+  --outline: #262626;
   --tertiary: #48484a;
 }
 
@@ -23,11 +24,13 @@
   --font-mono: var(--font-geist-mono);
   --font-space-grotesk: var(--font-space-grotesk);
   --font-inter: var(--font-inter);
+  --font-jetbrains-mono: var(--font-jetbrains-mono);
+  --font-plus-jakarta-sans: var(--font-plus-jakarta-sans);
 }
 
 @media (prefers-color-scheme: Dark) {
   :root {
-    --background: #000000;
+    --background: #0a0a0a;
     --foreground: #ffffff;
   }
 }
