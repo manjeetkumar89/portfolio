@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import NavLink from './NavLink'
 
-const glassPanel = " bg-[rgba(255,255,255,0.02)] backdrop-blur-sm border border-[rgba(255,255,255,0.08)] shadow-lg "
+const glassPanel = " bg-[rgba(255,255,255,0.02)] backdrop-blur-md border border-[rgba(255,255,255,0.08)] shadow-lg "
 
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
     ]
 
   return (
-    <nav className={`fixed md:px-40 px-4 w-full flex justify-between py-4 items-center ${glassPanel}`}>
+    <nav className={`fixed md:px-40 px-6 w-full flex justify-between py-4 items-center z-9 ${glassPanel}`}>
         <Link href={'/'}>
             <div className='uppercase tracking-[0.2em] font-plus-jakarta-sans font-bold text-sm'>Portfolio</div>
         </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* mobile menu */}
 
-        <div className='absolute top-14 left-0 w-full flex flex-col items-center gap-6 py-6 bg-[rgba(255,255,255,0.02)] backdrop-blur-sm border border-[rgba(255,255,255,0.08)] shadow-lg md:hidden' style={{display: isMenuOpen ? 'flex' : 'none'}}>
+        <div className='absolute top-14 left-0 w-full h-screen flex md:hidden flex-col font-jetbrains-mono tracking-widest uppercase text-[0.7rem] text-secondary items-center gap-6 py-6 bg-[rgba(14,14,14,0.94)] backdrop-blur-md border-t border-[rgba(255,255,255,0.8)] shadow-lg' style={{display: isMenuOpen ? 'flex' : 'none'}}>
            {
                 navLinks.map((navLink, index) => (
                     <NavLink key={index} link={navLink.link} content={navLink.content} toggleFunction={toggleMenu}/>
