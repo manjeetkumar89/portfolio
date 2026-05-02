@@ -15,7 +15,7 @@ const background = ' bg-[linear-gradient(to_right,rgba(156,156,156,0.07)_1px,tra
 
 const Home = () => {
   return (
-    <div className='relative w-full h-screen'>
+    <div className='relative w-full'>
 
       {/* hero section */}
       <section className={`md:px-40 px-6 pt-20 pb-4 w-full flex relative z-2  ${background}`}>
@@ -53,7 +53,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-span-1 md:col-span-2 flex flex-col gap-4 p-10 z-10 relative group'>
-              <RelaxedText contents={'architecture'} />
+              <RelaxedText contents={'core stack'} />
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 30.88 30.88" className='fill-white/7 group-hover:fill-white/15 transition w-35 aspect-square absolute bottom-5 right-5' >
                 <g>
@@ -82,12 +82,13 @@ const Home = () => {
       <section className='w-full px-6 md:px-40 py-32 flex flex-col gap-30 border border-secondary/20'>
         <div className='flex flex-col gap-6'>
           <RelaxedText contents={'case studies'} />
-          <div className='flex justify-between'>
+          <div className='flex flex-col md:flex-row gap-6 justify-between'>
             <div className='text-5xl md:text-7xl font-extrabold tracking-tighter font-plus-jakarta-sans uppercase'>Featured Artifacts</div>
             <div className='font-plus-jakarta-sans max-w-xs font-light text-secondary leading-relaxed flex flex-col justify-end'>Work defined by technical precision and architectural rigor.</div>
           </div>
         </div>
-        <div className='flex gap-20 items-center'>
+
+        <div className='flex flex-col md:flex-row gap-15 items-center mb-30 md:mb-0'>
           <div className='flex-3/5 border border-secondary/20 overflow-hidden perspective-distant transform-3d'>
             <Image src={liora} alt="featured project" className='w-full object-cover rotate-x-15 rotate-y-16 -translate-z-32 grayscale hover:grayscale-0 hover:scale-105 transition-all ease-in duration-500' />
           </div>
@@ -103,7 +104,7 @@ const Home = () => {
         </div>
 
 
-        <div className='flex flex-row-reverse gap-20 items-center'>
+        <div className='flex flex-col md:flex-row-reverse gap-15 items-center'>
           <div className='flex-3/5 border border-secondary/20 overflow-hidden perspective-distant transform-3d'>
             <Image src={coffee} alt="featured project coffee" className='w-full object-cover rotate-x-16 rotate-y-15 -translate-z-32 grayscale hover:grayscale-0 hover:scale-105 transition-all ease-in duration-500' />
           </div>
