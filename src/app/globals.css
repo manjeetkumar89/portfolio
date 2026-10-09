@@ -44,8 +44,8 @@ body {
 
 /* Modern browsers */
 ::selection {
-  background-color: #ffffff; /* Your choice of background color */
-  color: #000000;            /* Your choice of text color */
+  background-color: #ffffff; 
+  color: #000000;       
 }
 
 /* Specific support for Firefox */
